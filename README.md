@@ -499,12 +499,6 @@ SQLite database that stores all persistent data:
 
 ## ⚠️ Important Notes
 
-### WhatsApp Limitations
-- **Baileys is unofficial** — WhatsApp can ban accounts showing automation patterns. Use responsibly.
-- **Single connection only** — never run two Baileys clients (like wacli) on the same number simultaneously. This corrupts encryption keys.
-- **No historical messages** — message history starts from when the gateway first connects. Previous messages cannot be retrieved.
-- **File sending from WhatsApp sessions** — the bot may send file paths as text instead of actual files. Use TUI for file forwarding.
-
 ### Data & Privacy
 - All data stays on your machine — nothing is sent to external servers except API calls to Gemini/Groq.
 - `butler.db` contains your message history — keep it secure.
