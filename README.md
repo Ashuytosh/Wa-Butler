@@ -263,6 +263,7 @@ nano ~/.openclaw/workspace/contacts.md
 Add your actual contacts with their WhatsApp JIDs:
 - Personal: `91PHONENUMBER@s.whatsapp.net`
 - Groups: `GROUPID@g.us`
+- Important: Add all phone numbers you want to send messages to AND receive messages from in the allowFrom and groupAllowFrom arrays in openclaw.json. Use E.164 format: "+91XXXXXXXXXX". Without this, messaging to/from those contacts will be blocked.
 
 ### Step 5: Edit scripts paths
 
@@ -516,49 +517,12 @@ SQLite database that stores all persistent data:
 
 ---
 
-## 🔮 Future Roadmap
 
-- [ ] 24/7 deployment on Oracle Cloud Free Tier (Docker)
-- [ ] Morning brief via cron (auto WhatsApp digest at 8 AM)
-- [ ] Email watcher → WhatsApp alerts for important emails
-- [ ] Better deduplication in message sync
-- [ ] Gateway log persistence (backup to Google Drive)
-- [ ] Group sender name resolution (WhatsApp LID mapping)
-- [ ] WhatsApp-only interface (no TUI needed)
 
----
 
-## 💰 Cost
 
-| Service | Cost |
-|---------|------|
-| Gemini 2.5 Flash | ~₹11/day heavy use ($300 free credits ≈ 75 months) |
-| Groq Whisper | Free tier |
-| gog CLI | Free (uses your Google account) |
-| ddgr | Free |
-| OpenClaw | Free (open source) |
-| Tesseract | Free (open source) |
-| **Total** | **₹0/month** (while using Gemini credits) |
 
----
-
-## 🤝 Contributing
-
-Contributions welcome! Feel free to:
-- Report bugs via Issues
-- Suggest new skills or features
-- Submit PRs for improvements
-- Share your own skill templates
-
----
-
-## 📜 License
-
-MIT License — see [LICENSE](LICENSE)
-
----
-
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - [OpenClaw](https://github.com/openclaw/openclaw) — The AI assistant framework
 - [Baileys](https://github.com/WhiskeySockets/Baileys) — WhatsApp Web API
