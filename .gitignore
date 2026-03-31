@@ -1,0 +1,27 @@
+# Database
+data/butler.db
+data/downloads/
+data/logs/
+
+# Credentials
+*.json.bak
+credentials/
+config/openclaw.json
+
+# Media
+media/
+
+# Logs
+*.log
+nohup.out
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+
+# Temp
+/tmp/
